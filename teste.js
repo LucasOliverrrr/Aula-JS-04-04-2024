@@ -34,3 +34,15 @@ function g(){
     }
     return outraFuncao
 }
+
+const gResult = g()
+gResult()
+
+function saudacoesFactory(saudacao, nome){
+    return function(){
+        console.log(saudacao + "," + nome)
+    }
+}
+
+let olaJoao = saudacoesFactory("Ola", "João")
+olaJoao()
