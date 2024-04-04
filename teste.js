@@ -46,3 +46,11 @@ function saudacoesFactory(saudacao, nome){
 
 let olaJoao = saudacoesFactory("Ola", "João")
 olaJoao()
+
+let pessoa = {
+    nome: "João",
+    idade: 17,
+}
+
+console.log("Me chamo " + pessoa.nome)
+console.log("Tenho " + pessoa["idade"] + " anos")
